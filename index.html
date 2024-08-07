@@ -17,11 +17,21 @@
             font-style: normal;
             color: coral;
         } */
+         @media only screen and(orientation: portrait) {
+           .box{
+            background-color: aquamarine;
+           }
+         }
+         @media only screen and(orientation: landscape){
+          .box{
+            background-color: rgb(41, 189, 120);
+          }
+         }
     </style>
   </head>
-  <body>
+  <body class="box">
     
-    <fieldset>
+    <fieldset >
       <legend><h2 style="background-color: aliceblue;" ><b>My Work</b></h2></legend>
       <a href="part1/W001.html">W001</a>
       <a href="part1/W002.html">W002</a>
@@ -43,7 +53,7 @@
     </fieldset>
     <fieldset>
       <legend style="color: chocolate;"><h2><b>Assignments</b></h2></legend>
-      
+      <a href="assignments/A002.html">A002</a>
     </fieldset>
   </body>
 </html>
