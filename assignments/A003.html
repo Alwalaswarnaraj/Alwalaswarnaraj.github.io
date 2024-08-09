@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Facebook Login</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: white;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+        .logo {
+            font-size: 36px;
+            color: rgb(23, 123, 190);
+            margin-bottom: 20px;
+            margin-top: 100px;
+            font-weight: bold;
+            position: absolute;
+            top: 50px;
+            left: 50%;
+            transform: translateX(-50%);
+        }
+        .login-container {
+            background-color: white;
+            padding: 20px;
+            border-radius: 8px;
+            margin-right: 10px;
+            box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+            width: 320px;
+            text-align: center;
+        }
+        input[type="text"], input[type="password"] {
+            /* align-items: center; */
+            width: 100%;
+            padding: 10px;
+            margin: 10px 0;
+            border-radius: 6px;
+            border: 1px solid rgb(100, 124, 139);
+        }
+        .error-message {
+            display: none;
+            color: rgb(146, 75, 75);
+            font-size: 12px;
+            margin-bottom: 15px;
+        }
+        .login-btn {
+            background-color: rgb(26, 147, 228);
+            color: white;
+            padding: 10px;
+            width: 100%;
+            border: none;
+            border-radius: 6px;
+            cursor: pointer;
+            font-size: 16px;
+        }
+        .login-btn:hover {
+            background-color: rgb(17, 135, 231);
+        }
+        .forgot-password {
+            display: block;
+            margin-top: 10px;
+            font-size: 14px;
+            color: rgb(32, 142, 231);
+            text-decoration: none;
+        }
+        .forgot-password:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+
+<div class="logo">facebook</div>
+
+<div class="login-container">
+    <input type="text" id="email" placeholder="Email address or phone number">
+    <input type="password" id="password" placeholder="Password">
+    <div class="error-message" id="error-message">The email address or mobile number you entered isn't connected to an account. <a href="#">Find your account and log in.</a></div>
+    <button class="login-btn" >Log in</button>
+    <a href="#" class="forgot-password">Forgotten password?</a>
+</div>
+
+
+
+</body>
+</html>
