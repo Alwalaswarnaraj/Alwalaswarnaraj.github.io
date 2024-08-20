@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+
+      body {
+        font-family: Arial, sans-serif;
+        color: white;
+        margin: 0;
+        padding: 0;
+        background-image: url("C:\languages\Alwalaswarnaraj.github.io\assignments\Snapchat-1373267537.jpg"); /* Path to your image */
+        background-size: cover; /* Ensures the image covers the entire background */
+        background-position: center; /* Centers the image */
+        background-repeat: no-repeat; /* Prevents the image from repeating */
+        background-attachment: fixed; /* Makes the background stay fixed during scrolling */
+      }
+
+      .header {
+        display: flex;
+        justify-content: space-between;
+        /* align-items: center; */
+        padding: 20px;
+        background-color: transparent;
+        position: absolute;
+        width: 90%;
+        z-index: 100;
+      }
+      .header .logo h1 {
+        font-size: 2.5rem;
+        color: red;
+        margin-left: 90%;
+      }
+      .header .language-selector button,
+      .header .sign-in button {
+        background-color: red;
+        /* border: 1px solid rgb(48, 39, 39); */
+        color: white;
+        padding: 5px 10px;
+        /* font-size: 1rem; */
+        cursor: pointer;
+        justify-content: space-between;
+      }
+      .header .language-selector button {
+        background-color: transparent;
+      }
+
+      .hero {
+        background-image: url("backgroundinage.jpg");
+        background-size: cover;
+        background-position: center;
+        height: 100vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        position: relative;
+        text-align: center;
+      }
+      .hero .overlay {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(0, 0, 0, 0.6);
+        z-index: 1;
+      }
+      .hero .content {
+        position: relative;
+        z-index: 2;
+        max-width: 800px;
+        margin: 0 auto;
+        padding: 20px;
+      }
+      .hero h2 {
+        font-size: 3rem;
+        margin-bottom: 20px;
+        white-space: nowrap;
+        /* text-align: center; */
+      }
+
+      .hero p {
+        font-size: 1.2rem;
+        margin-bottom: 20px;
+      }
+      .hero .input-container {
+        display: flex;
+        justify-content: center;
+      }
+      .hero .input-container input[type="email"] {
+        padding: 10px;
+        font-size: 1rem;
+        width: 300px;
+        border: none;
+        outline: none;
+        margin-right: 10px;
+      }
+
+      .hero .input-container button {
+        padding: 10px 20px;
+        background-color: #e50914;
+        color: white;
+        font-size: 1rem;
+        border: none;
+        cursor: pointer;
+      }
+      /* Rest of your CSS remains the same */
+
+      .language-selector {
+        position: relative;
+        display: inline-block;
+        margin-right: 20px;
+      }
+
+      .dropbtn {
+        background-color: transparent;
+        border: 1px solid white;
+        color: white;
+        padding: 5px 10px;
+        font-size: 1rem;
+        cursor: pointer;
+      }
+
+      .dropdown-content {
+        display: none; /* Hidden by default */
+        position: absolute;
+        background-color: white;
+        min-width: 160px;
+        box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+        z-index: 1;
+        margin-top: 5px;
+      }
+
+      .dropdown-content a {
+        color: white;
+        padding: 12px 16px;
+        text-decoration: none;
+        /* display: block; */
+      }
+      .hero h3 {
+        font-size: 1.5rem;
+        margin-bottom: 20px;
+      }
+
+      /* TV Section Styling */
+      .tv-section {
+        padding-top: 40%;
+        background-color: #000;
+        color: white;
+        padding: 60px 0; /* Padding for top and bottom */
+        justify-content: center;
+      }
+
+      .tv-container {
+        padding-left: 30%;
+        display: flex;
+        /* align-items: center; */
+        justify-content: space-between;
+        max-width: 1200px;
+        margin: 0 auto; /* Centering the container */
+        padding: 30px 40px; /* Adds margin on left and right */
+        float: right;
+      }
+
+      .tv-text {
+        flex: 1; /* Allow text to take up available space */
+        /* padding-right: 20px; Space between text and image */
+        padding-left: 10%;
+        flex: star;
+      }
+
+      .tv-text h2 {
+        font-size: 2.5rem;
+        margin-bottom: 20px;
+      }
+
+      .tv-text p {
+        font-size: 1.2rem;
+        line-height: 1.6;
+      }
+
+      .tv-image {
+        flex: 1; /* Allow image to take up available space */
+        padding-left: 20px; /* Space between image and text */
+        max-width: 50%;
+        justify-content: right;
+      }
+
+      .tv-image img {
+        width: 450px;
+        height: 300px;
+        border-radius: 8px;
+      }
+      hr{
+        color: gray;
+        border: 4px solid;
+      }
+    </style>
+  </head>
+  <body>
+    <header class="header">
+      <div class="logo">
+        <h1 style="color: red">NETFLIX</h1>
+      </div>
+      <div class="header-buttons">
+        <div class="language-selector">
+          <button class="dropbtn">English ▼</button>
+          <div class="dropdown-content">
+            <a href="#">English</a>
+            <a href="#">Español</a>
+            <a href="#">Français</a>
+            <a href="#">Deutsch</a>
+          </div>
+        </div>
+        <div class="sign-in">
+          <button>Sign-In</button>
+        </div>
+      </div>
+    </header>
+    <section class="hero">
+      <div class="overlay"></div>
+      <div class="content">
+        <h2>Unlimited movies, TV shows and more</h2>
+        <h3>Watch anywhere. Cancel anytime.</h3>
+        <p>
+          Ready to watch? Enter your email to create or restart your membership.
+        </p>
+        <div class="input-container">
+          <input type="email" placeholder="Email address" />
+          <button>Get Started ></button>
+        </div>
+      </div>
+
+    </section>
+    <hr>
+    <!-- TV Section -->
+    <section class="tv-section">
+      <div class="container">
+        <div class="tv-content">
+          <div class="tv-text">
+            <h2>Enjoy on your TV</h2>
+            <p>
+              Watch on smart TVs, PlayStation, Xbox, <br>
+              Chromecast, Apple TV,
+              Blu-ray players, and more.
+            </p>
+          </div>
+          <div class="tv-image">
+            <img src="str.jpg" alt="TV Image" />
+          </div>
+        </div>
+      </div>
+    </section>
+    <hr>
+  </body>
+</html>

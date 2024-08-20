@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        @keyframes topics{
+            from {
+                left: 0px
+                box-shadow: 2px 3px 3px 3px silver;
+            }
+            to{
+                left:400px
+                background-color: yellow;
+                box-shadow: 2px 3px 3px 3px;
+            }
+        }
+        div:hover{
+            position: relative;
+            animation-name: topics;
+            animation-duration: 5s;
+            animation-iteration-count: infinite;
+            animation-timing-function: ease-in;
+        }
+        div h2{
+            animation-delay: 2s;
+        }
+    </style>
+</head>
+<body>
+    <div >
+        <h2>Hello</h2>
+    </div>
+    <div>
+        <h1 style="color: red; font-size: 200px;" >🤦‍♂️🤦‍♂️</h1>
+    </div>
+</body>
+</html>

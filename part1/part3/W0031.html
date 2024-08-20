@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="icon" href="https://picsum.photos/seed/picsum/200/300">
+    <style>
+        
+        .com-name{
+            justify-content: space-between;
+            display: flex;
+            background-color: orange;
+            font-size: 20px;
+            margin-left: 50px;
+            margin-right: 50px;
+        }
+        *{
+            margin: 0px;
+
+        }
+        ul{
+            /* margin: 0%;
+            padding: 0%; */
+            background-color: orange;
+           
+            /* right: 50px; */
+            top: 0%;
+            /* position: absolute; */
+        }
+        a{
+            text-decoration: none;
+        }
+        a:hover{
+            background-color: red;
+        }
+        li{
+            display: inline-block;
+            padding: 10px;
+            /* background-color: aqua; */
+        }
+        .menu:hover .sub-menu{
+            display: block;
+        }
+        .sub-menu{
+            display: none;
+            position: absolute;
+            background-color: rgb(0, 255, 221);
+            color: black;
+            padding: 5px;
+        }
+    </style>
+</head>
+<body>
+    <div class="com-name">
+    <div >company name</div>
+    <ul>
+        <div>
+        <li>Home</li>
+        <li class="menu">Course
+            <div class="sub-menu">
+                <a href="#">Java</a><br>
+                <a href="#">pyhton</a><br>
+            </div>
+        </li>
+        <li>About</li>
+        <li>Contact</li>
+    </ul>
+</div>
+</div>
+</body>
+</html>
