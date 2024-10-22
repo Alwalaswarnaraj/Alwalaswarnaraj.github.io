@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <table border="1px">
+      <tr>
+        <td>marks</td>
+        <td>result</td>
+      </tr>
+      <tr>
+        <td id="marks"></td>
+        <td id="result"></td>
+      </tr>
+    </table>
+    <script>
+      let marks = (document.getElementById("marks").innerHTML =
+        prompt("enter the marks"));
+
+      if (marks > 0 && marks < 35) {
+        document.getElementById("result").innerHTML = "failed...😥";
+      } else if (marks >= 35 && marks <= 50) {
+        document.getElementById("result").innerHTML = "passed...😎";
+      } else if (marks > 50 && marks <= 70) {
+        document.getElementById("result").innerHTML = "First Class...🙄";
+      } else if (marks > 70 && marks <= 100) {
+        document.getElementById("result").innerHTML = "Distiction🤐";
+      } else if(marks>100){
+        alert("enter valid marks");
+      }
+    </script>
+  </body>
+</html>

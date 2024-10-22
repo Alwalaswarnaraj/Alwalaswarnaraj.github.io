@@ -1,0 +1,49 @@
+#container{
+    width: 1000px;
+    height: auto;
+    margin: auto;
+}
+.banner img{
+    width: 1000px;
+    height: 200px;
+    background-color: black;
+}
+.left{
+    width:500px;
+    height: 400px;
+    background-color: aqua;
+    float: left;
+}
+.right{
+    width: 500px;
+    height: 400px;
+    background-color: rgb(139, 201, 114);
+    float: left;
+}
+
+@media screen and (max-width:999px){
+    #container{
+        width: 100%;
+    }
+    .banner{
+        width: 100%;
+    }
+    .left{
+        width: 30%;
+    }
+    .right{
+        width: 70%;
+    }
+    .banner img{
+        width: 100%;
+    }
+}
+
+@media screen and (max-width:600px){
+    .left{
+        width: 100%;
+    }
+    .right{
+        width: 100%;
+    }
+}

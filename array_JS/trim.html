@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var txt1 = "    JavaScript      ";
+        var txt2 = txt1.trim();
+        document.write(txt1+"<br>")
+        document.write(txt2+"<br>")
+        document.write(txt1.length +"<br>")
+        document.write(txt2.length +"<br>")
+
+        //replace
+        var txt3 = txt2.replace("JavaScript", "React")
+        document.write("txt3: "+txt3+"<br>")
+
+        var txt4 = txt3.replace("React", "Angular")
+        document.write("text 4: "+txt4+"<br>")
+
+        //replaceAll
+        var txt5 = "Java is Java where Java is also Java"
+        var txt6  = txt5.replaceAll("Java", "java")
+
+        document.write(txt5+"<br>")
+        document.write(txt6+"<br>")
+
+        var txt8 = "vehicle is  car but every vehicle is not a car"
+        // var word = prompt("Enter the word")
+        // var txt9 = txt8.replaceAll("car",word)
+        // var txt9 = txt8.replaceAll("car",prompt("Enter the word"))
+        // document.write(txt9)
+
+        var txt10 = "swarnaraj sandeep sai hari rahul revanth"
+        
+        var s= txt10.split(" ")
+        var le =  s.length
+        for(let i=0;i<le;i++){
+            document.write(s[i]+"<br>")
+        }
+    </script>
+</body>
+</html>

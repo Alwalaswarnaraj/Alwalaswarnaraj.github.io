@@ -1,0 +1,58 @@
+#container{
+    width:1000px;
+    height: auto;
+    margin: auto;
+    /* background-color: blue; */
+}
+.banner{
+    width: 1000px;
+    height: 200px;
+    background-color: blue;
+
+}
+.left{
+    width:250px;
+    height: 400px;
+    background-color: aqua;
+    float: left;
+}
+.middle{
+    width: 350px;
+    height: 400px;
+    background-color: brown;
+    float: left;
+}
+.right{
+    width: 400px;
+    height: 400px;
+    background-color: rgb(189, 52, 52) ;
+    float: right;
+}
+
+@media screen and (max-width:999px){
+    #container{
+        width: 100%;
+    }
+
+    .banner{
+        width: 100%;
+    }
+    .left{
+        width: 100%;
+    }
+    .middle{
+        width: 50%;
+    }
+    .right{
+        width: 50%;
+    }
+}
+
+@media screen and (max-width:700px) {
+    .middle{
+        width: 100%;
+    }
+    .right{
+        width: 100%;
+    }
+}

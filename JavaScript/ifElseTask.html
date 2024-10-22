@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+        .red{
+            background-color: red;
+        }
+        .green{
+            background-color: rgb(57, 207, 89);
+        }
+    </style>
+  </head>
+  <body>
+    <table border= "2px" >
+      <tr>
+        <td>date</td>
+        <td>Name</td>
+        <td>age</td>
+        <td>result</td>
+      </tr>
+      <tr>
+        <script>
+          let name = prompt("enter your name");
+          let age = prompt("enter your age");
+
+          document.write("<td>"+Date()+"</td>");
+          document.write("<td>"+name+"</td>");
+          document.write("<td>"+age+"</td>");
+          if (age < 18) {
+            document.write("<td class='red'> Not eligible </td>");
+          } else {
+            document.write("<td class='green'> Your Eligible </td>");
+          }
+        </script>
+      </tr>
+    </table>
+  </body>
+</html>

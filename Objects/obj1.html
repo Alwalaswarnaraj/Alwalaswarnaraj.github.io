@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>javaScript- Objects</h1>
+    <script>
+
+        //using object literals we defining the object here;
+        const person={
+            fName:"Swarnaraj",
+            lName:"Alwala",
+            age:21
+        }
+
+        console.log(person)
+        document.write(person.fName+"<br>"+person.lName+"<br>"+person.age+"<br> <hr> <br> <h1>without literals </h1> <br>")
+
+        //empty objects
+        const product={}
+        product.id="y87nwkj5",
+        product.pName="Apple"
+
+        console.log(product.id)
+        document.write(product.id+"<br>"+product.pName+"<br> <hr> <br> <h1>From the prompt</h1> <br>")
+
+        //from the prompt
+
+        const student={}
+        document.write(student.fN=prompt("Enter the First name")+" ");
+        document.write(student.lN=prompt("Enter the last name"))
+    </script>
+</body>
+</html>
