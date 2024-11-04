@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        span{
+            color: orange;
+        }
+    </style>
+</head>
+<body>
+    <h2 id="txt"></h2>
+    <select name="" id="course" onchange="demo()">
+        <option value="html">html</option>
+        <option value="java">java</option>
+        <option value="spring">spring</option>
+        <option value="sql">sql</option>
+    </select>
+    <script>
+        function demo(){
+            const x = document.getElementById('course').value;
+            document.getElementById('txt').innerHTML = "you've selected <span>" +x+ "</span> course"
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+       
+    </style>
+</head>
+<body id="ts">
+    <p align="center">hello welcome</p>
+    <select id="color" onchange="demo()">
+        <option value="red">red</option>
+        <option value="blue">blue</option>
+        <option value="orange">orange</option>
+        <option value="black">black</option>
+    </select>
+    <script>
+        function demo(){
+           const x = document.getElementById("color").value;
+            document.getElementById("ts").style.background = x
+            
+            // document.getElementById()
+        }
+    </script>
+</body>
+</html>
