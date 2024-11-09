@@ -6,13 +6,13 @@
     <title>Document</title>
 </head>
 <body>
-    <h3 id="txt"></h3>
+    <h2 id="num"></h2>
     <script>
+        let num = prompt("enter a number")
         function demo(){
-            const obj = new Date()
-            const time = obj.toLocaleTimeString()
-            document.getElementById('txt').innerHTML=time
-    }
+             num++
+            document.getElementById('num').innerHTML = num
+        }
         setInterval('demo()',1000)
     </script>
 </body>
